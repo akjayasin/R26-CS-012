@@ -1,0 +1,49 @@
+{
+  "component_name": "Canonical Prompt Structuring and Minimal Context Orchestration Middleware",
+  "component_version": "PP1-Prototype-v0.1",
+  "mode": "standalone_middleware_demo",
+
+  "supported_input_types": [
+    ".txt",
+    ".json",
+    ".md",
+    ".pdf",
+    ".docx",
+    ".pptx",
+    ".jpg",
+    ".jpeg",
+    ".png"
+  ],
+
+  "pp1_scope": {
+    "enabled_features": [
+      "input_type_detection",
+      "content_extraction_simulation",
+      "prompt_normalisation",
+      "technical_clue_extraction",
+      "code_context_indexing",
+      "minimal_context_selection",
+      "canonical_json_generation",
+      "context_reduction_evaluation"
+    ],
+    "excluded_features": [
+      "sensitive_data_detection",
+      "risk_tagging",
+      "data_masking",
+      "final_ai_response_generation",
+      "full_component_integration"
+    ]
+  },
+
+  "context_selection": {
+    "max_selected_blocks": 3,
+    "minimum_relevance_score": 1,
+    "enable_dependency_expansion": true
+  },
+
+  "output_settings": {
+    "structured_output_folder": "outputs/structured_outputs",
+    "evaluation_output_folder": "outputs/evaluation",
+    "log_output_folder": "outputs/logs"
+  }
+}
