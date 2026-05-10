@@ -1,0 +1,4 @@
+Image/OCR extracted prompt:
+
+Search feature is very slow when the developer types a keyword.
+Check the relevant code related to search input, filtering, and rendering results.

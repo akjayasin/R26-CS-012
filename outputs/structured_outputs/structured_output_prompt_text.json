@@ -1,0 +1,59 @@
+{
+    "package_type": "minimal_context_prompt_package",
+    "trace_id": "CPSM-2026-05-10_12-41-55-prompt_text",
+    "source": "Prompt Agent",
+    "destination": "Risk Intelligence Framework",
+    "user_request": "Why is the login failing after the user clicks submit?",
+    "request_analysis": {
+        "detected_intents": [
+            "debugging",
+            "ui_interaction"
+        ],
+        "domain_clues": [
+            "login"
+        ],
+        "technical_keywords": [
+            "login",
+            "failing",
+            "clicks",
+            "submit"
+        ]
+    },
+    "selected_code_context": [
+        {
+            "file": "sample_project_code.js",
+            "function": "submitLoginForm",
+            "lines": "30-49",
+            "relevance_score": 14,
+            "matched_clues": [
+                "login",
+                "submit",
+                "handler_pattern",
+                "error_handling_pattern"
+            ],
+            "code": "async function submitLoginForm(formData) {\n    const validationResult = validateLoginForm(\n        formData.username,\n        formData.password\n    );\n\n    if (!validationResult.valid) {\n        showLoginError(validationResult.message);\n        return;\n    }\n\n    const loginResponse = await sendLoginRequest(formData);\n\n    if (!loginResponse.success) {\n        showLoginError(\"Login failed after submit\");\n        return;\n    }\n\n    redirectToDashboard(loginResponse.user);\n}"
+        },
+        {
+            "file": "sample_project_code.js",
+            "function": "showLoginError",
+            "lines": "65-67",
+            "relevance_score": 9,
+            "matched_clues": [
+                "login",
+                "error_handling_pattern"
+            ],
+            "code": "function showLoginError(message) {\n    console.error(\"Login error:\", message);\n}"
+        },
+        {
+            "file": "sample_project_code.js",
+            "function": "validateLoginForm",
+            "lines": "8-27",
+            "relevance_score": 7,
+            "matched_clues": [
+                "login"
+            ],
+            "code": "function validateLoginForm(username, password) {\n    if (!username || !password) {\n        return {\n            valid: false,\n            message: \"Missing username or password\"\n        };\n    }\n\n    if (password.length < 6) {\n        return {\n            valid: false,\n            message: \"Password length is too short\"\n        };\n    }\n\n    return {\n        valid: true,\n        message: \"Validation successful\"\n    };\n}"
+        }
+    ],
+    "handoff_status": "ready_for_next_component"
+}

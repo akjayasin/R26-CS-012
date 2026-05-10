@@ -1,0 +1,4 @@
+Document extracted prompt:
+
+The dashboard page is not loading customer data after refreshing the screen.
+Please identify the relevant code area that handles dashboard data loading and API response handling.

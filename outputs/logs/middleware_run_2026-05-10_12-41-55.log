@@ -1,0 +1,17 @@
+2026-05-10 12:41:55,584 | INFO | Middleware pipeline started.
+2026-05-10 12:41:55,585 | INFO | Component name: Canonical Prompt Structuring and Minimal Context Orchestration Middleware
+2026-05-10 12:41:55,585 | INFO | Running PP1 standalone middleware simulation.
+2026-05-10 12:41:55,585 | INFO | Discovered 1 supported input file(s).
+2026-05-10 12:41:55,585 | INFO | Building code context index from codebase folder.
+2026-05-10 12:41:55,586 | INFO | Indexed 1 file(s), 18 code block(s), 184 total code line(s).
+2026-05-10 12:41:55,586 | INFO | Processing input: prompt_text.txt
+2026-05-10 12:41:55,590 | INFO | Input detected: {'file_name': 'prompt_text.txt', 'file_extension': '.txt', 'file_size_bytes': 54, 'simulated_source_component': 'Prompt Agent'}
+2026-05-10 12:41:55,590 | INFO | Content extraction method: direct_text_read
+2026-05-10 12:41:55,590 | INFO | Prompt normalization completed.
+2026-05-10 12:41:55,590 | INFO | Extracted clues: {'login': 7, 'failing': 2, 'clicks': 2, 'submit': 2, 'debugging': 3, 'ui_interaction': 3}
+2026-05-10 12:41:55,591 | INFO | Selected 3 relevant code block(s).
+2026-05-10 12:41:55,591 | INFO | Context reduction: 76.63%
+2026-05-10 12:41:55,591 | INFO | Structured output written to: C:\Users\User\Desktop\CPSM_Middleware_Demo\outputs\structured_outputs\structured_output_prompt_text.json
+2026-05-10 12:41:55,591 | INFO | Status log written to: C:\Users\User\Desktop\CPSM_Middleware_Demo\outputs\evaluation\status_log_prompt_text.txt
+2026-05-10 12:41:55,591 | INFO | Middleware pipeline completed.
+2026-05-10 12:41:55,592 | INFO | Pipeline summary written to: C:\Users\User\Desktop\CPSM_Middleware_Demo\outputs\evaluation\pipeline_run_summary.json

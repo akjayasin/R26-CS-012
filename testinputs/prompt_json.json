@@ -1,0 +1,6 @@
+{
+  "source_component": "Prompt Agent",
+  "input_channel": "developer_chat",
+  "prompt": "Explain how the profile save function works after the user clicks the save button.",
+  "request_type": "code_explanation"
+}

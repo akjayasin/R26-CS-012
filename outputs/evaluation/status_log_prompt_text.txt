@@ -1,0 +1,44 @@
+CPSM Middleware Processing Status Log
+====================================
+Trace ID: CPSM-2026-05-10_12-41-55-prompt_text
+
+Input Details
+-------------
+Input File: prompt_text.txt
+Input Type: .txt
+File Size: 54 bytes
+Extraction Method: direct_text_read
+Extraction Status: success
+
+Prompt Analysis
+---------------
+Normalized Prompt: Why is the login failing after the user clicks submit?
+Detected Intents: ['debugging', 'ui_interaction']
+Domain Clues: ['login']
+Technical Keywords: ['login', 'failing', 'clicks', 'submit']
+
+Selected Context
+----------------
+Selected Block Count: 3
+- submitLoginForm (sample_project_code.js lines 30-49) | Score: 14
+- showLoginError (sample_project_code.js lines 65-67) | Score: 9
+- validateLoginForm (sample_project_code.js lines 8-27) | Score: 7
+
+Research Evaluation Snapshot
+----------------------------
+Evaluation Status: success
+Total Code Lines Available: 184
+Total Code Blocks Available: 18
+Selected Context Lines: 43
+Selected Context Blocks: 3
+Context Reduction Percentage: 76.63%
+Selected Block Ratio Percentage: 16.67%
+
+Interpretation
+--------------
+The middleware reduced the available code context by selecting only task-relevant blocks for downstream processing.
+
+Component Boundary
+------------------
+This component performs prompt structuring and minimal context orchestration only.
+Sensitive data detection, risk tagging, masking, and AI response generation are excluded.

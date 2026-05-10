@@ -1,0 +1,17 @@
+{
+    "pipeline_status": "completed",
+    "processed_files": 1,
+    "successful_files": 1,
+    "failed_files": 0,
+    "results": [
+        {
+            "file_name": "prompt_text.txt",
+            "status": "success",
+            "trace_id": "CPSM-2026-05-10_12-41-55-prompt_text",
+            "structured_output": "C:\\Users\\User\\Desktop\\CPSM_Middleware_Demo\\outputs\\structured_outputs\\structured_output_prompt_text.json",
+            "status_log": "C:\\Users\\User\\Desktop\\CPSM_Middleware_Demo\\outputs\\evaluation\\status_log_prompt_text.txt",
+            "context_reduction_percentage": 76.63,
+            "selected_context_blocks": 3
+        }
+    ]
+}
